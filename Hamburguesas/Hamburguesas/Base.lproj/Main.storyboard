@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hamburguesas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rusia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VVs-tS-xOF">
+                                <rect key="frame" x="184" y="401" width="46.5" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hamburguesa Sombrero" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ufu-1e-0by">
+                                <rect key="frame" x="50" y="324" width="314" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 4" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="puC-H4-r9q">
+                                <rect key="frame" x="188" y="524" width="38" height="31.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="POR TAN SOLO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="esR-0O-g4I">
+                                <rect key="frame" x="147" y="486" width="120" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OBr-AG-pT6">
+                                <rect key="frame" x="20" y="681" width="374" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.11402736021406637" blue="0.38514391722412888" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Quiero una hamburguesa!">
+                                    <color key="titleColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="siguienteHamburguesa" destination="BYZ-38-t0r" eventType="touchUpInside" id="PVO-B2-v0w"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="OBr-AG-pT6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="25s-SZ-2qk"/>
+                            <constraint firstItem="Ufu-1e-0by" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="280" id="2sN-O7-Lic"/>
+                            <constraint firstItem="Ufu-1e-0by" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8wr-Dk-ac7"/>
+                            <constraint firstItem="puC-H4-r9q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BLA-qs-8vU"/>
+                            <constraint firstItem="VVs-tS-xOF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EFY-9E-28O"/>
+                            <constraint firstItem="VVs-tS-xOF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="357" id="Tjo-WR-asb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="esR-0O-g4I" secondAttribute="bottom" constant="355" id="iEn-DD-2Kb"/>
+                            <constraint firstItem="esR-0O-g4I" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="l9Q-lc-QcI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OBr-AG-pT6" secondAttribute="bottom" constant="151" id="o0l-ke-vbr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="puC-H4-r9q" secondAttribute="bottom" constant="306.5" id="rwj-m5-hOS"/>
+                            <constraint firstItem="OBr-AG-pT6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uAH-FI-UTt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="labelHamburguesa" destination="Ufu-1e-0by" id="LkT-jn-Ny7"/>
+                        <outlet property="labelPais" destination="VVs-tS-xOF" id="uWX-SE-D3i"/>
+                        <outlet property="labelPrecio" destination="puC-H4-r9q" id="BqL-sw-pYn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
+        </scene>
+    </scenes>
+</document>
